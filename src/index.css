@@ -1,13 +1,116 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app{
+    background-color: rgb(72, 71, 101);
+    min-height: 650px;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
+
+.navbar{
+    background-color: rgb(37, 36, 61);
+    display: flex;
+    justify-content: center;
+}
+
+.nav_title{
+    padding: 0.7rem;
+    color: white;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.all_filters{
+    width: 91.666667%;
+    max-width: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 0.31rem;
+    margin: 0.51rem auto;
+}
+
+.filter_btn {
+    background-color: rgb(34, 30, 42);
+    color: white;
+    padding: 0.4rem 0.51rem;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filter_btn:hover{
+    border: 2px solid white;
+    background-color: rgb(15, 15, 17);
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card{
+   display: flex;
+   flex-direction: column;
+   max-width: 220px;
+   height: 265px;
+   background-color: rgb(37, 36, 61);
+   color: white;
+   border-radius: 5px;
+   position: relative;
+   transition: all 0.2s ease;
+}
+
+.card:hover{
+    transform: scale(1.02);
+}
+
+
+.card_image{
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    border: none;
+    bottom: 50%;
+    right: 3%;
+    cursor: pointer;
+}
+
+.like_btn{
+    width: 20px;
+    height: 20px;
+}
+
+.card_info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.41rem;
+    padding: 0.81rem 0.7rem;
+}
+
+
+
+
